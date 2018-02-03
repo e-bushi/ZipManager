@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F606896A2022285500E3564E /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60689692022285500E3564E /* CollectionTableViewCell.swift */; };
 		F64D026520169BC600B738DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D026420169BC600B738DE /* AppDelegate.swift */; };
 		F64D026720169BC600B738DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D026620169BC600B738DE /* ViewController.swift */; };
 		F64D026A20169BC600B738DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64D026820169BC600B738DE /* Main.storyboard */; };
@@ -15,9 +16,11 @@
 		F64D027820169ED300B738DE /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64D027720169ED300B738DE /* Zip.framework */; };
 		F64D027B20169F8D00B738DE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64D027A20169F8D00B738DE /* Collection.swift */; };
 		F65A2A232016A29D00B1C512 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65A2A222016A29D00B1C512 /* Alamofire.framework */; };
+		F69326A32018305500DF695D /* ImageCollectionNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69326A22018305500DF695D /* ImageCollectionNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60689692022285500E3564E /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		F64D026120169BC600B738DE /* ZipManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64D026420169BC600B738DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F64D026620169BC600B738DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		F64D027720169ED300B738DE /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Carthage/Build/iOS/Zip.framework; sourceTree = "<group>"; };
 		F64D027A20169F8D00B738DE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		F65A2A222016A29D00B1C512 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F69326A22018305500DF695D /* ImageCollectionNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F60689682022281200E3564E /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F64D026620169BC600B738DE /* ViewController.swift */,
+				F60689692022285500E3564E /* CollectionTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		F64D025820169BC600B738DE = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +76,14 @@
 		F64D026320169BC600B738DE /* ZipManager */ = {
 			isa = PBXGroup;
 			children = (
+				F60689682022281200E3564E /* TableView */,
 				F64D026420169BC600B738DE /* AppDelegate.swift */,
-				F64D026620169BC600B738DE /* ViewController.swift */,
+				F69326A22018305500DF695D /* ImageCollectionNetwork.swift */,
+				F64D027A20169F8D00B738DE /* Collection.swift */,
 				F64D026820169BC600B738DE /* Main.storyboard */,
 				F64D026B20169BC600B738DE /* Assets.xcassets */,
 				F64D026D20169BC600B738DE /* LaunchScreen.storyboard */,
 				F64D027020169BC600B738DE /* Info.plist */,
-				F64D027A20169F8D00B738DE /* Collection.swift */,
 			);
 			path = ZipManager;
 			sourceTree = "<group>";
@@ -176,6 +190,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69326A32018305500DF695D /* ImageCollectionNetwork.swift in Sources */,
+				F606896A2022285500E3564E /* CollectionTableViewCell.swift in Sources */,
 				F64D027B20169F8D00B738DE /* Collection.swift in Sources */,
 				F64D026720169BC600B738DE /* ViewController.swift in Sources */,
 				F64D026520169BC600B738DE /* AppDelegate.swift in Sources */,
